@@ -545,22 +545,23 @@ function AddEmployeeForm() {
               />
             </div>
           </label>
-          <label className="form-control w-full max-w-xs">
-            <span className="label-text">
-              <strong>Locker No:</strong>
-            </span>
-            <div className="label">
-              <input
-                onChange={handleLockers}
-                value={lockers}
-                min={"0"}
-                type="number"
-                placeholder="Count..."
-                className="input input-bordered w-full "
-              />
-            </div>
-          </label>
         </div>
+        <label className="form-control w-full">
+          <span className="label-text">
+            <strong>Locker No:</strong>
+          </span>
+          <div className="label">
+            <input
+              required
+              onChange={handleLockers}
+              value={lockers}
+              min={"0"}
+              type="number"
+              placeholder="locker no"
+              className="input input-bordered w-full "
+            />
+          </div>
+        </label>
 
         <select
           name="department_id"
